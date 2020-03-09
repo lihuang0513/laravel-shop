@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Http\Request;
+use App\Exceptions\InternalException;
 
 class InternalException extends Exception
 {
@@ -23,4 +24,5 @@ class InternalException extends Exception
 
         return view('pages.error', ['msg' => $this->msgForUser]);
     }
+
 }
