@@ -15,14 +15,16 @@ class OrderReviewed
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    /**
-     * Create a new event instance.
-     *
-     * @return void
-     */
+    protected $order;
+
     public function __construct(Order $order)
     {
         $this->order = $order;
+    }
+
+    public function getOrder()
+    {
+        return $this->order;
     }
 
     /**
@@ -34,9 +36,5 @@ class OrderReviewed
     {
         return new PrivateChannel('channel-name');
     }
-
-    public function getOrder()
-    {
-        return $this->order;
-    }
 }
+

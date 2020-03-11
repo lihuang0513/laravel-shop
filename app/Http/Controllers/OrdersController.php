@@ -13,6 +13,7 @@ use App\Services\CartService;
 use App\Services\OrderService;
 use App\Exceptions\InvalidRequestException;
 use App\Http\Requests\SendReviewRequest;
+use App\Events\OrderReviewed;
 
 class OrdersController extends Controller
 {
