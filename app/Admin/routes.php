@@ -3,8 +3,7 @@
 use Illuminate\Routing\Router;
 
 Admin::routes();
-// 1
-// 2
+
 Route::group([
     'prefix'        => config('admin.route.prefix'),
     'namespace'     => config('admin.route.namespace'),
