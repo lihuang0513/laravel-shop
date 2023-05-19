@@ -20,6 +20,7 @@ class OrdersController extends Controller
 {
     public function store(OrderRequest $request, OrderService $orderService)
     {
+        // echo 5;
         $user    = $request->user();
         $address = UserAddress::find($request->input('address_id'));
 
