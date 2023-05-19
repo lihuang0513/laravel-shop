@@ -12,6 +12,7 @@ class PaymentController extends Controller
 {
     public function payByAlipay(Order $order, Request $request)
     {
+        // echo 3;
         // 判断订单是否属于当前用户
         $this->authorize('own', $order);
         // 订单已支付或者已关闭
