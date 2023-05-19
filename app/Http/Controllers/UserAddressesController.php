@@ -10,6 +10,7 @@ class UserAddressesController extends Controller
 {
     public function index(Request $request)
     {
+        // echo dev
         return view('user_addresses.index', [
             'addresses' => $request->user()->addresses,
         ]);

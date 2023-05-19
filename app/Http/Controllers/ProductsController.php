@@ -11,6 +11,7 @@ class ProductsController extends Controller
 {
     public function index(Request $request)
     {
+        // echo dev
         // echo 1
         // 创建一个查询构造器
         $builder = Product::query()->where('on_sale', true);
