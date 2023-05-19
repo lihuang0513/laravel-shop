@@ -1,8 +1,6 @@
 
 echo 2
 
-echo 5555
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
