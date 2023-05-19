@@ -1,6 +1,7 @@
 
 
 echo 2
+echo 3
 
 <!DOCTYPE html>
 <html lang="zh-CN">
